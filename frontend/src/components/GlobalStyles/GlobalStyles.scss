@@ -1,0 +1,99 @@
+@import 'normalize.css';
+:root {
+    --primary: #fe2c55;
+    // Default layout
+    --default-layout-header-height: 60px;
+    --default-layout-header-width: 1232px;
+    --text-color: #161823;
+    --background-hover-gray: rgba(22, 24, 35, 0.03);
+    --background-hover-pink: rgba(254, 44, 85, 0.03);
+    --pink-color: rgba(254, 44, 85, 1);
+    --white-color: #fff;
+    --gray-color: rgba(22, 24, 35, 0.12);
+    --black-color: rgba(22, 24, 35, 1);
+    --gray-middle-color: rgba(22, 24, 35, 0.5);
+    --border-gray: 1px solid var(--gray-color);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'ProximaNova', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+button,
+input,
+[tabindex] {
+    border: none;
+    outline: none;
+    color: var(--text-color);
+}
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
+}
+input:placeholder-shown {
+    text-overflow: ellipsis;
+}
+
+//custom tooltip tippy
+body .tippy-box {
+    height: 37px;
+    border-radius: 8px;
+    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.03px;
+    background-color: rgba(84, 84, 84, 0.92);
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    .tippy-arrow {
+        display: block;
+        color: transparent;
+        position: absolute !important;
+        width: 36px;
+        height: 8px;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDM2IDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDhoNi42ODZhOCA4IDAgMCAwIDUuNjU3LTIuMzQzbDQuOTUtNC45NWExIDEgMCAwIDEgMS40MTQgMGw0Ljk1IDQuOTVBOCA4IDAgMCAwIDI5LjMxNCA4SDM2IDB6IiBmaWxsPSIjNTQ1NDU0IiBmaWxsLW9wYWNpdHk9Ii45MiIvPjwvc3ZnPg==);
+        top: -8px !important;
+        left: 0;
+    }
+    .tippy-content {
+        padding: 0 9px;
+    }
+    .tippy-box[data-inertia][data-state='visible'] {
+        transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+}
+// font
+
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/Proxima-Nova-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/Proxima-Nova-Semibold.woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/Proxima-Nova-Bold.woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: SofiaPro;
+    src: url('/assets/fonts/sofiapro-bold.woff');
+    font-weight: 700;
+}

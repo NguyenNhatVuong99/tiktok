@@ -1,0 +1,2 @@
+users index: https://64b3659838e74e386d5608f7.mockapi.io/api/v1/users
+users show: https://64b3659838e74e386d5608f7.mockapi.io/api/v1/users/:id

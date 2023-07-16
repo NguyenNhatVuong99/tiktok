@@ -1,0 +1,47 @@
+.wrapper {
+    width: 100%;
+    height: 58px;
+    padding: 9px 16px;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+    }
+    .avatar {
+        width: 40px;
+        height: 40px;
+        margin-right: 12px;
+        display: inline-block;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .info {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        .username {
+            font-size: 16px;
+            line-height: 21px;
+            letter-spacing: 0.03px;
+            font-weight: 550;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            svg {
+                margin-left: 5px;
+            }
+        }
+        .nickname {
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.093px;
+            color: rgba(22, 24, 35, 0.5);
+            font-weight: 400;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}
